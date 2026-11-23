@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ali Asger — Data Engineer &amp; MCA Student | Portfolio</title>
+<meta name="description" content="Ali Asger — MCA student at Bharati Vidyapeeth IMED, Pune, working toward data engineering. Python, C, C++, .NET, JavaScript and SQL Server. Built a Student Management System end to end.">
+<meta name="author" content="Ali Asger">
+<meta name="theme-color" content="#07080a">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ali Asger — Data Engineer &amp; MCA Student">
+<meta property="og:description" content="I build web applications end to end — interface, database, and the rules that keep records consistent.">
+<meta property="og:locale" content="en_IN">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/chat.css">
+
+<script>
+  /* Runs before paint: no flash of the wrong theme. */
+  (function () {
+    var root = document.documentElement;
+    root.classList.add('js');
+    try {
+      var saved = localStorage.getItem('theme');
+      var system = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      root.setAttribute('data-theme', saved || system);
+    } catch (e) {
+      root.setAttribute('data-theme', 'dark');
+    }
+
+    /* Safety net: if main.js fails to load, never leave content invisible. */
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        if (!document.querySelector('.reveal.in')) {
+          var items = document.querySelectorAll('.reveal');
+          for (var i = 0; i < items.length; i++) items[i].classList.add('in');
+        }
+      }, 1200);
+    });
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ali Asger",
+  "jobTitle": "Data Engineer",
+  "email": "mailto:aliudaipur5312@gmail.com",
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Aishwarya College of Education Sansthan, Udaipur" },
+    { "@type": "CollegeOrUniversity", "name": "Bharati Vidyapeeth IMED, Pune" }
+  ],
+  "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+  "knowsAbout": ["Data Engineering", "Python", "C", "C++", ".NET", "JavaScript", "SQL Server"],
+  "sameAs": ["https://github.com/AliAsger007"]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-head" id="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#top" aria-label="Ali Asger — back to top">
+      <span class="brand-mark" aria-hidden="true">AA</span>
+      <span class="brand-text">
+        Ali Asger
+        <span class="brand-sub">Data Engineer</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#work">Work</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+
+    <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch to light theme" title="Switch theme (T)">
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z"/></svg>
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M18.7 5.3l-1.4 1.4M6.7 17.3l-1.4 1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="badge reveal"><span class="dot" aria-hidden="true"></span> Open to internships · Pune</p>
+
+          <h1 class="reveal" style="--d:1">Ali Asger</h1>
+          <p class="hero-role reveal" style="--d:1">Data engineer — MCA student</p>
+
+          <p class="hero-hook reveal" style="--d:2">
+            I build the part of an application that has to be correct.
+          </p>
+
+          <p class="hero-lede reveal" style="--d:3">
+            MCA student at <strong>Bharati Vidyapeeth IMED, Pune</strong>. I designed and built a
+            <strong>Student Management System</strong> end to end — the interface, the database, and
+            the rules that keep student records consistent. Looking for an internship where I can do
+            more of that.
+          </p>
+
+          <div class="hero-cta reveal" style="--d:4">
+            <a class="btn solid" href="#work">
+              View the project
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn" href="resume.html" data-cv>View CV</a>
+          </div>
+        </div>
+
+        <div class="term reveal" style="--d:2" role="img" aria-label="Terminal window: Ali Asger, data engineer, MCA at IMED Pune. Stack: Python, C, C++, .NET, SQL, JavaScript. Project: student-management-system.">
+          <div class="term-bar" aria-hidden="true">
+            <span class="term-dots"><i></i><i></i><i></i></span>
+            <span class="term-title">ali@asger: ~/portfolio</span>
+          </div>
+          <div class="term-body" aria-hidden="true">
+            <div class="tline"><span class="prompt"><span class="path">ali@asger</span>:~$</span> <span class="cmd">whoami</span></div>
+            <div class="tline out">Ali Asger — data engineer, MCA @ IMED Pune</div>
+            <div class="tline">&nbsp;</div>
+            <div class="tline"><span class="prompt"><span class="path">ali@asger</span>:~$</span> <span class="cmd">cat stack.txt</span></div>
+            <div class="tline out key">Python · C · C++ · .NET · SQL · JavaScript</div>
+            <div class="tline">&nbsp;</div>
+            <div class="tline"><span class="prompt"><span class="path">ali@asger</span>:~$</span> <span class="cmd">ls work/</span></div>
+            <div class="tline out">student-management-system/</div>
+            <div class="tline"><span class="prompt"><span class="path">ali@asger</span>:~$</span> <span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STACK STRIP ================= -->
+  <div class="stack-strip">
+    <div class="wrap stack-inner">
+      <span class="stack-label">Core stack</span>
+      <ul class="stack-list">
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>.NET</li>
+        <li>SQL Server</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="sec-path"><span class="tilde">~/</span>about<span class="line"></span></div>
+
+      <div class="sec-head">
+        <h2>Records, rules, and the code underneath.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="prose reveal">
+          <p>
+            I'm an MCA student at Bharati Vidyapeeth's IMED in Pune, and a 2025 BCA graduate from
+            Aishwarya College of Education Sansthan in Udaipur. I grew up in Salumber, a small town
+            in Rajasthan — which is probably why I still find it slightly surprising that a form on a
+            screen can update a record a real college runs on.
+          </p>
+          <p>
+            For my BCA final-year project I built a <strong>Student Management System</strong> on my
+            own. A new student registers, and the system generates their unique student ID and roll
+            number. From then on their student portal shows the courses they're enrolled in, the exams coming
+            up, and any backlog papers they still need to clear. The admin side is where those records
+            are created and updated — students, courses, exam schedules, backlogs. The interface is
+            HTML, CSS and JavaScript; the data lives in Microsoft SQL Server.
+          </p>
+          <p>
+            The part I enjoyed most wasn't the screens. It was deciding what the database should refuse
+            to allow: what keeps a roll number unique, how a backlog is tied to both a student and a
+            subject, what happens when an admin corrects a record. That's the kind of work I want more
+            of, and it's why I'm aiming at data engineering rather than front-end only.
+          </p>
+        </div>
+
+        <aside class="fact-card reveal" style="--d:1" aria-label="At a glance">
+          <h3>At a glance</h3>
+          <dl>
+            <div class="row"><dt>Education</dt><dd class="hi">MCA — IMED Pune<br><span class="sub">2026 — present</span></dd></div>
+            <div class="row"><dt>Before</dt><dd>BCA — Udaipur, 2025</dd></div>
+            <div class="row"><dt>Focus</dt><dd>Data engineering</dd></div>
+            <div class="row"><dt>Core</dt><dd>Python · C · C++ · .NET · SQL</dd></div>
+            <div class="row"><dt>Based in</dt><dd>Pune, Maharashtra</dd></div>
+            <div class="row"><dt>Status</dt><dd class="hi">Open to internships</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STACK ================= -->
+  <section class="section" id="stack">
+    <div class="wrap">
+      <div class="sec-path"><span class="tilde">~/</span>stack<span class="line"></span></div>
+
+      <div class="sec-head">
+        <h2>Tools I actually use.</h2>
+        <p class="lede">
+          Grouped by what they're for, not by how impressive they sound. No percentages, no
+          five-star ratings — the note under each one is what I can honestly do with it today.
+        </p>
+      </div>
+
+      <ul class="skills-grid">
+        <li class="skill reveal">
+          <div class="skill-top"><span class="skill-cat">Language</span><span class="skill-num">01</span></div>
+          <h3>Python</h3>
+          <p>Scripting, file handling, problem solving</p>
+        </li>
+        <li class="skill reveal" style="--d:1">
+          <div class="skill-top"><span class="skill-cat">Language</span><span class="skill-num">02</span></div>
+          <h3>C</h3>
+          <p>Pointers, memory, core fundamentals</p>
+        </li>
+        <li class="skill reveal" style="--d:2">
+          <div class="skill-top"><span class="skill-cat">Language</span><span class="skill-num">03</span></div>
+          <h3>C++</h3>
+          <p>Object-oriented programming, data structures</p>
+        </li>
+        <li class="skill reveal" style="--d:3">
+          <div class="skill-top"><span class="skill-cat">Framework</span><span class="skill-num">04</span></div>
+          <h3>.NET</h3>
+          <p>Object-oriented programming on the .NET framework</p>
+        </li>
+        <li class="skill reveal">
+          <div class="skill-top"><span class="skill-cat">Data</span><span class="skill-num">05</span></div>
+          <h3>SQL (T-SQL)</h3>
+          <p>Joins, aggregates, constraints</p>
+        </li>
+        <li class="skill reveal">
+          <div class="skill-top"><span class="skill-cat">Data</span><span class="skill-num">06</span></div>
+          <h3>Microsoft SQL Server</h3>
+          <p>Schema design, relational records</p>
+        </li>
+        <li class="skill reveal" style="--d:1">
+          <div class="skill-top"><span class="skill-cat">Web</span><span class="skill-num">07</span></div>
+          <h3>JavaScript</h3>
+          <p>DOM, events, fetch</p>
+        </li>
+        <li class="skill reveal" style="--d:2">
+          <div class="skill-top"><span class="skill-cat">Web</span><span class="skill-num">08</span></div>
+          <h3>HTML &amp; CSS</h3>
+          <p>Semantic markup, responsive layouts</p>
+        </li>
+        <li class="skill reveal" style="--d:3">
+          <div class="skill-top"><span class="skill-cat">Tool</span><span class="skill-num">09</span></div>
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control, repositories</p>
+        </li>
+      </ul>
+
+      <p class="footnote reveal">If it isn't here, I'm not claiming it. The list changes when my work does.</p>
+    </div>
+  </section>
+
+  <!-- ================= WORK ================= -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="sec-path"><span class="tilde">~/</span>work<span class="line"></span></div>
+
+      <div class="sec-head">
+        <h2>Built, not just planned.</h2>
+        <p class="lede">
+          One project taken all the way through: the data model, the admin side, the student side,
+          and the awkward cases in between.
+        </p>
+      </div>
+
+      <article class="case reveal">
+        <div class="case-head">
+          <div>
+            <p class="case-kicker">BCA final-year project · Solo · 2025</p>
+            <h3>Student Management System</h3>
+          </div>
+          <span class="chip live">Completed</span>
+        </div>
+
+        <p class="case-lede">
+          A web application that runs a college's student records. Students register, receive a
+          generated ID and roll number, then open a <strong>student portal</strong> showing their
+          courses, upcoming exams and backlog papers. An <strong>admin dashboard</strong> maintains
+          the records behind it.
+        </p>
+
+        <ol class="flow" aria-label="How the system works">
+          <li>
+            <span class="flow-n">01</span>
+            <strong>Register</strong>
+            <span>New student submits their details</span>
+          </li>
+          <li>
+            <span class="flow-n">02</span>
+            <strong>Generate</strong>
+            <span>Unique student ID and roll number issued</span>
+          </li>
+          <li>
+            <span class="flow-n">03</span>
+            <strong>Admin</strong>
+            <span>Courses, exams and backlogs are recorded</span>
+          </li>
+          <li>
+            <span class="flow-n">04</span>
+            <strong>Student portal</strong>
+            <span>Courses, exams and backlogs in one view</span>
+          </li>
+        </ol>
+
+        <div class="case-grid">
+          <div>
+            <h4>Two modules, one system</h4>
+            <div class="modules">
+              <div class="module">
+                <h5>Student portal</h5>
+                <ul>
+                  <li>Student ID and roll number, as issued</li>
+                  <li>Enrolled course details</li>
+                  <li>Upcoming exams and their dates</li>
+                  <li>Backlog papers awaiting re-examination</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h5>Admin dashboard</h5>
+                <ul>
+                  <li>Adds and updates student records</li>
+                  <li>Manages courses and subjects</li>
+                  <li>Schedules exams, including backlog re-exams</li>
+                  <li>Feeds every view in the student portal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="spec">
+            <h4>Under the hood</h4>
+            <dl>
+              <div class="row"><dt>Role</dt><dd>Solo — interface, database, logic</dd></div>
+              <div class="row"><dt>Type</dt><dd>BCA final-year project</dd></div>
+              <div class="row"><dt>Frontend</dt><dd>HTML, CSS, JavaScript</dd></div>
+              <div class="row"><dt>Database</dt><dd>Microsoft SQL Server</dd></div>
+              <div class="row"><dt>Status</dt><dd>Completed, 2025</dd></div>
+              <div class="row"><dt>Code</dt><dd>Available on request</dd></div>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+      <p class="footnote reveal">More experiments and coursework live on GitHub — the project code above is available on request.</p>
+    </div>
+  </section>
+
+  <!-- ================= CV ================= -->
+  <section class="section" id="cv">
+    <div class="wrap">
+      <div class="sec-path"><span class="tilde">~/</span>cv<span class="line"></span></div>
+
+      <div class="sec-head">
+        <h2>Education, in order.</h2>
+      </div>
+
+      <div class="cv-grid">
+        <ol class="timeline reveal">
+          <li>
+            <span class="t-when">2026 — present</span>
+            <div class="t-what">
+              <h3>MCA — Master of Computer Applications</h3>
+              <p>Bharati Vidyapeeth (Deemed University), IMED · Pune, Maharashtra.</p>
+            </div>
+          </li>
+          <li>
+            <span class="t-when">Graduated 2025</span>
+            <div class="t-what">
+              <h3>BCA — Bachelor of Computer Applications</h3>
+              <p>Aishwarya College of Education Sansthan · Udaipur, Rajasthan.<br>
+                 Final-year project: Student Management System.</p>
+            </div>
+          </li>
+          <li>
+            <span class="t-when">Schooling</span>
+            <div class="t-what">
+              <h3>Primary &amp; secondary education</h3>
+              <p>Salumber, Rajasthan.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="cv-side reveal" style="--d:1">
+          <div class="fact-card">
+            <h3>What I'm looking for</h3>
+            <p>
+              An internship in software or backend development where I can own a feature end to end,
+              have my code reviewed properly, and learn how a real team handles the unglamorous parts —
+              validation, error states, migrations.
+            </p>
+          </div>
+          <div class="fact-card">
+            <h3>One page, printable</h3>
+            <p>
+              Everything above, condensed onto a single A4 sheet with a clean print layout.
+            </p>
+            <div class="card-cta">
+              <a class="btn" href="resume.html" data-cv>View the CV
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <div class="sec-path"><span class="tilde">~/</span>contact<span class="line"></span></div>
+
+      <h2 class="reveal">Let's build something.</h2>
+
+      <div class="contact-grid">
+        <div class="reveal" style="--d:1">
+          <p class="contact-lede">
+            I'm looking for a data engineering internship — Pune, hybrid or remote. If you're hiring,
+            or you just want to talk schemas, pipelines and side projects, my inbox is open.
+          </p>
+
+          <div class="contact-actions">
+            <a class="cbtn" href="https://github.com/AliAsger007" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.55v-1.94c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.59.23 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+              GitHub
+            </a>
+
+            <!-- LINKEDIN: paste your profile URL into the anchor below, then replace the
+                 <span class="cbtn is-pending"> with it. -->
+            <!--
+            <a class="cbtn" href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+              LinkedIn
+            </a>
+            -->
+            <span class="cbtn is-pending" aria-disabled="true" title="LinkedIn link coming soon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+              LinkedIn <span class="tag">soon</span>
+            </span>
+
+            <a class="cbtn primary" href="mailto:aliudaipur5312@gmail.com?subject=Hello%20Ali%20%E2%80%94%20from%20your%20portfolio&amp;body=Hi%20Ali%2C%0A%0AI%20found%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch.%0A%0A">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2-.5 7.8 6.1L19.8 5H4.2Zm15.8 1.9-7.3 5.7a1.5 1.5 0 0 1-1.9 0L3.5 6.9V18.5c0 .3.2.5.5.5h15c.3 0 .5-.2.5-.5V6.9Z"/></svg>
+              Email me
+            </a>
+          </div>
+
+          <p class="contact-mail">
+            Or write directly — <a href="mailto:aliudaipur5312@gmail.com">aliudaipur5312@gmail.com</a>
+          </p>
+        </div>
+
+        <ul class="contact-meta reveal" style="--d:2">
+          <li><span class="k">Based</span><span class="v">Pune, Maharashtra</span></li>
+          <li><span class="k">From</span><span class="v">Udaipur, Rajasthan</span></li>
+          <li><span class="k">Open to</span><span class="v">Data engineering internships — Pune, hybrid or remote</span></li>
+          <li><span class="k">Email</span><span class="v"><a href="mailto:aliudaipur5312@gmail.com">aliudaipur5312@gmail.com</a></span></li>
+          <li><span class="k">GitHub</span><span class="v"><a href="https://github.com/AliAsger007" target="_blank" rel="noopener noreferrer">github.com/AliAsger007</a></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <span>© <span id="year">2026</span> Ali Asger</span>
+    <span>Hand-coded — HTML, CSS, JavaScript · <span class="kbd">T</span> for theme</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- ================= CV OVERLAY ================= -->
+<div class="cv-modal" id="cv-modal" hidden>
+  <div class="cv-backdrop"></div>
+  <div class="cv-panel" id="cv-panel" role="dialog" aria-modal="true" aria-label="Curriculum vitae">
+    <header class="cv-head">
+      <span class="cv-title">Curriculum vitae — Ali Asger</span>
+      <div class="cv-actions">
+        <a class="cv-open" href="resume.html" target="_blank" rel="noopener">Open in tab</a>
+        <button class="cv-close" id="cv-close" type="button" aria-label="Close CV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </header>
+    <div class="cv-body" id="cv-body">
+      <header class="cv-doc-head">
+        <h3 class="cv-name">Ali Asger</h3>
+        <p class="cv-role">Data Engineer · MCA Student</p>
+        <p class="cv-contact">
+          <span>Pune, Maharashtra, India</span>
+          <a href="mailto:aliudaipur5312@gmail.com">aliudaipur5312@gmail.com</a>
+          <a href="https://github.com/AliAsger007" target="_blank" rel="noopener noreferrer">github.com/AliAsger007</a>
+        </p>
+      </header>
+
+      <section class="cv-sec">
+        <h4>Profile</h4>
+        <p>
+          MCA student at Bharati Vidyapeeth IMED, Pune, and a 2025 BCA graduate from Udaipur.
+          Designed and built a Student Management System end to end — registration, automatic ID and
+          roll-number generation, student and admin portals, and the relational database behind them.
+          Comfortable in Python, C, C++, .NET, JavaScript and SQL. Looking for a data or backend
+          internship where the work is real and the review is honest.
+        </p>
+      </section>
+
+      <section class="cv-sec">
+        <h4>Education</h4>
+        <div class="cv-entry">
+          <div>
+            <h5>MCA — Master of Computer Applications</h5>
+            <p class="cv-sub">Bharati Vidyapeeth (Deemed University), IMED · Pune, Maharashtra</p>
+          </div>
+          <span class="cv-when">2026 — present</span>
+        </div>
+        <div class="cv-entry">
+          <div>
+            <h5>BCA — Bachelor of Computer Applications</h5>
+            <p class="cv-sub">Aishwarya College of Education Sansthan · Udaipur, Rajasthan</p>
+          </div>
+          <span class="cv-when">Graduated 2025</span>
+        </div>
+        <div class="cv-entry">
+          <div>
+            <h5>Schooling — primary &amp; secondary</h5>
+            <p class="cv-sub">Salumber, Rajasthan</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cv-sec">
+        <h4>Technical skills</h4>
+        <dl class="cv-skills">
+          <div><dt>Languages</dt><dd>Python, C, C++, JavaScript, SQL (T-SQL)</dd></div>
+          <div><dt>Framework</dt><dd>.NET — object-oriented fundamentals</dd></div>
+          <div><dt>Web</dt><dd>HTML5, CSS3 — semantic markup, responsive layouts</dd></div>
+          <div><dt>Database</dt><dd>Microsoft SQL Server — schema design, joins, constraints</dd></div>
+          <div><dt>Tools</dt><dd>Git, GitHub</dd></div>
+        </dl>
+      </section>
+
+      <section class="cv-sec">
+        <h4>Projects</h4>
+        <div class="cv-entry">
+          <div>
+            <h5>Student Management System</h5>
+            <p class="cv-sub">HTML · CSS · JavaScript · Microsoft SQL Server · Solo</p>
+          </div>
+          <span class="cv-when">BCA final-year · 2025</span>
+        </div>
+        <ul class="cv-list">
+          <li>
+            Built a web application that manages the student record lifecycle: a new student
+            registers and the system generates a unique student ID and roll number automatically.
+          </li>
+          <li>
+            Built the student portal: one view for enrolled course details, upcoming exams and
+            backlog papers awaiting re-examination.
+          </li>
+          <li>
+            Admin dashboard creates and updates the underlying records — students, courses, exam
+            schedules and backlogs — feeding every view in the portal.
+          </li>
+          <li>
+            Designed the relational schema in Microsoft SQL Server so identifiers stay unique and
+            each backlog ties to both its student and its subject.
+          </li>
+        </ul>
+      </section>
+
+      <div class="cv-foot">
+        <span>Last updated — November 2026</span>
+        <a href="resume.html" target="_blank" rel="noopener">Printable version →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PORTFOLIO ASSISTANT ================= -->
+<div class="chat" id="chat-root">
+  <button class="chat-launch" id="chat-launch" type="button" aria-expanded="false" aria-controls="chat-panel" aria-label="Ask about Ali — open chat">
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 9 9 0 0 1-3.8-.8L3 21l1.9-5.2A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5Z"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    <span class="label">Ask about Ali</span>
+  </button>
+
+  <section class="chat-panel" id="chat-panel" role="dialog" aria-label="Portfolio assistant" aria-modal="false" hidden>
+    <header class="chat-head">
+      <span class="chat-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="chat-title">ali@asger: assistant</span>
+      <button class="chat-close" id="chat-close" type="button" aria-label="Close chat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </header>
+
+    <div class="chat-log" id="chat-log" role="log" aria-live="polite" aria-label="Conversation"></div>
+    <div class="chat-chips" id="chat-chips"></div>
+
+    <form class="chat-form" id="chat-form" autocomplete="off">
+      <label class="sr-only" for="chat-input">Your question</label>
+      <input id="chat-input" name="question" type="text" placeholder="Ask about skills, project, availability…" maxlength="200">
+      <button class="chat-send" type="submit" aria-label="Send message">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </form>
+  </section>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/cv.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>
